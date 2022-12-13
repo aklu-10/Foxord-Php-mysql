@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar
+  {
+    width:2px;
+  }
+
+  ::-webkit-scrollbar-thumb
+  {
+    background-color: orangered;
+    border-radius: 20px;
+  }
+
+
+
+  button
+  {
+    width: max-content;
+  }
+  
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2% 5%;
+    height: 8vh;
+    box-shadow: 0 0 10px gray;
+    position: sticky;
+    top: 0;
+    background-color: orangered;
+    z-index: 4;
+  }
+  header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 50%;
+    font-size: 1.4rem;
+    color: white;
+    position: relative;
+    top: 6px;
+    text-decoration: none;
+  }
+  header .logo i {
+    position: relative;
+    bottom: 8px;
+    right: 5px;
+  }
+  header nav {
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 0.94rem;
+    margin: 0 2%;
+  }
+  header nav a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  header .menubar {
+    display: none;
+  }
+  
+  .hero #carouselExampleIndicators {
+    z-index: 1;
+  }
+  .hero #carouselExampleIndicators li[data-target="#carouselExampleIndicators"].active {
+    background-color: orangered;
+  }
+  
+  .mainBanner {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20%;
+  }
+  .mainBanner h2 {
+    font-size: 0.95rem;
+    color: gray;
+  }
+  .mainBanner h1 {
+    text-align: center;
+  }
+  .mainBanner h1 span {
+    color: orangered;
+  }
+  .mainBanner p {
+    padding: 0 10%;
+    text-align: center;
+    color: gray;
+  }
+  
+  .academics {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .academics .box1 {
+    flex-basis: 40%;
+    background-image: url("../img/academics.jpg");
+    background-size: cover;
+  }
+  .academics .box2 {
+    border: 1px solid red;
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 20px;
+    background-color: orangered;
+    color: white;
+  }
+  .academics .box2 button {
+    margin-top: 10px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.78);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+  }
+  .academics .box2 button:hover {
+    opacity: 0.9;
+  }
+  .academics .box1, .academics .box2 {
+    min-height: 40vh;
+    height: 100%;
+  }
+
+  .Admission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  
+  .Admission img {
+    filter: opacity(0.4s);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .Admission h2 {
+    margin-bottom: 2%;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    width: 80vw;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  form {
+    width: 80vw;
+  }
+  form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.4%;
+    padding: 8px;
+  }
+  form select {
+    padding: 10px;
+    width: 100%;
+  }
+  form fieldset {
+    margin: 1% 0;
+    padding: 10px 0px;
+    padding-left: 5px;
+    background-color: white;
+  }
+  form button {
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    margin: 10px 50%;
+    transform: translateX(-50%);
+  }
+
+  .enquiry
+  {
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  form
+  {
+      display: flex;
+      flex-direction: column;
+  }
+
+  input
+  {
+      padding: 10px 20px;
+      margin: 10px 0px;
+  }
+
+  button
+  {
+      background-color: orangered;
+      color:white;
+      border:none;
+      padding: 10px 0;
+  }
+
+  
+  .university_data
+  {
+    min-height: 90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 0 40px;
+  }
+
+  .university_data .box1,
+  .university_data .box2
+  {
+    height: 80vh;
+  }
+
+  .university_data .box1
+  {
+    flex-basis: 60%;
+    
+  }
+
+  .university_data .box1 h3
+  {
+    color:orangered;
+  }
+
+  .university_data .box1 p
+  {
+    color:rgba(0,0,0,.4);
+    font-size: .9rem;
+    padding-right: 20%;
+  }
+
+  .university_data .box1 .illustration
+  {
+    width:max-content;
+    height:100px;
+    margin-bottom:10%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    }
+
+    .university_data .box1 .illustration .illus
+    {
+        width:40px;
+        height: 40px;
+        margin: 0 10px;
+        box-shadow: 0 0 4px gray;
+        font-size: 1.5rem;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:gray;
+    }
+
+    .university_data .box1 .illustration .illus:hover
+    {
+        transform: translateY(calc(1px*var(--speed)));
+    }
+
+
+  .university_data .box2
+  {
+    flex-basis: 40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+  }
+
+  .university_data .box2 img
+  {
+    width:100%;
+  }
+
+  @media (max-width:950px)
+  {
+    .university_data
+    {
+        flex-direction: column;
+        padding: 0 20px;
+
+    }  
+
+    .university_data .box1 p
+    {
+        padding: 0;
+    }
+      
+
+  }
+
+
+  @media (max-width: 500px) {
+    form {
+      width: 90vw;
+    }
+    .Admission h2 {
+      width: 90vw;
+    }
+  }
+  
+  
+  .navigate
+  {
+    padding:10px 20px;
+    position: fixed;
+    top:10px;
+    left:20px;
+    background-color: orangered;
+    text-decoration: none;
+    color:white;
+  }
+
+
+
+  @media (max-width: 1000px) {
+    header nav {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: orangered;
+      box-shadow: 0 0 3px gray;
+      width: 0%;
+      z-index: 100;
+      overflow: hidden;
+      transition: 0.2s ease;
+    }
+    header nav.show {
+      width: 60%;
+    }
+    header .menubar {
+      display: initial;
+      color: white;
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    footer {
+      flex-direction: column;
+    }
+    footer .box1, footer .box2, footer .box3 {
+      margin: 10px;
+    }
+
+  .courses .courses_item {
+    justify-content: center;  
+  }
+
+  .courses .item {
+    width:80% !important;
+  }
+
+  }
+  @media (max-width: 500px) {
+    html {
+      font-size: 80%;
+    }
+    .mainBanner h1 {
+      font-size: 1.5rem;
+    }
+    .mainBanner p {
+      font-size: 0.68rem;
+    }
+    .academics {
+      flex-direction: column;
+    }
+    .academics .box1 {
+      width: 100%;
+    }
+  }
+  .courses {
+    margin-top: 10%;
+  }
+  .courses .title {
+    font-size: 1.4rem;
+    color: orangered;
+    font-weight: 100;
+    text-align: center;
+    border-bottom: 1px solid orangered;
+    width: max-content;
+    margin: 10% auto;
+  }
+  .courses .courses_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .courses .item {
+    width: 400px;
+    height: 250px;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    box-shadow: 0 0 5px orangered;
+  }
+  .courses .item:hover {
+    transform: scale(0.9);
+  }
+  
+  .campus .item {
+    height: 500px;
+    position: relative;
+    box-shadow: none;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .campus .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+    transition: 0.2s ease;
+  }
+  .campus .item h2 {
+    position: absolute;
+    transition: 0.2s ease;
+  }
+  .campus .item:hover {
+    transform: none;
+  }
+  .campus .item:hover img {
+    transform: scale(1.2);
+    filter: brightness(90%);
+  }
+  .campus .item:hover h2 {
+    opacity: 0;
+  }
+  
+  .contact {
+    margin: 10% 0;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40vh;
+    z-index: -1;
+    filter: brightness(35%);
+    object-fit: cover;
+    transition: 0.2s ease;
+  }
+  .contact p {
+    padding: 0 20%;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .contact:hover img {
+    transform: scale(1.2);
+  }
+  
+  footer {
+    min-height: max-content;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+  }
+  footer .box1, footer .box2, footer .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .box1 h4, footer .box2 h4, footer .box3 h4 {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1.3rem;
+  }
+  footer .box1 ul li, footer .box2 ul li, footer .box3 ul li {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+  footer .box1 ul li:hover, footer .box2 ul li:hover, footer .box3 ul li:hover {
+    color: white;
+  }
+  footer .box2 ul li a
+  {
+    text-decoration: none;
+  }
+
+  footer .box2 ul li a:hover
+  {
+    color:white !important;
+  }
+
+  footer .box3 {
+    flex-direction: row;
+  }
+  footer .box3 input {
+    height: 35px;
+    width: 70%;
+    border: none;
+    padding-left: 10px;
+  }
+  footer .box3 button {
+    height: 35px;
+    border-radius: 0;
+  }
+  
+
+  
+
